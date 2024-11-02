@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+
+body{
+
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/prato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.container {
+
+    max-width: 1200px;
+    margin:0 auto;
+
+    /* background-attachment: fixed; */
+    background-color: rgb(255, 255, 255);
+
+}
+
+.logo img{
+    height: 4rem;
+    width: auto;
+    border-radius: 40%;
+}
+
+.mainHeader{
+    display: flex; /*applichiamo display:flex al genitore di LOGO e MENU */
+
+    justify-content: space-around;
+    /* affianca sull'asse principale e dispone ai lati opposti*/
+
+    align-items: center;
+    /* allineo al centro sull'asse verticale */
+    background-color: rgb(255, 255, 255);
+}
+
+.barra_di_navigazione ul{
+
+    list-style-type:none;
+    margin: 0;
+
+    display: flex;
+
+    gap: 1.5rem;
+    /*aggiunge uno spazio vuoto tra gli elementi figli */
+
+}
+
+.wrapper{
+    width:75%;
+        margin:0 auto;
+
+        background-color: rgb(255, 255, 255);
+    
+        padding: 1rem;
+}
+
+
+
+/* hr{
+    width: 50%;
+    height: 2px; 
+    background-color: #eb0000; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+} */
+
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-color: #666;
+
+    margin-top: 2rem;
+}
