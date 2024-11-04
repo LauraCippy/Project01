@@ -4,26 +4,19 @@
 
 a{
     text-decoration: none;
-    /* // <uniquifier>: Use a unique and descriptive class name
-       // <weight>: Use a value from 300 to 800
-
-    .moderustic-<uniquifier>  */
-    font-family: "Moderustic", sans-serif;
-    font-optical-sizing: auto;
-    /* font-weight: <weight>; */
-    
-
 }
+/* // <uniquifier>: Use a unique and descriptive class name
+   // <weight>: Use a value from 300 to 800*/
+
+/*.moderustic-<uniquifier> 
+font-family: "Moderustic", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>; */
 
 
 body{
 
-    background-color: rgb(44, 109, 153);
-/* background-image: url(../img/prato.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-    
+    background-color: rgb(44, 109, 153);   
 }
 
 .container {
@@ -83,7 +76,81 @@ body{
     padding: 1rem;
 }
 
+.box-1{
+    display: flex;
+   align-items: center;
+}
 
+.img-box-1 img{
+    height: 10rem;
+    width: auto;
+    border-radius: 100%;
+
+}
+
+.text-box-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+
+.box-2{
+    display: flex;
+    margin: 30px;
+
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.img-box-2 img{
+    height: 35rem;
+    width: auto;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.text-box-2{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.box-3{
+    display: flex;
+    margin: 30px;
+    align-items: center;
+}
+.img-box-3 img{
+    height: 35rem;
+    width: auto;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.text-box-3{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.box-4{
+    display: flex;
+    margin: 30px;
+    align-items: center;
+}
+
+.img-box-4 img{
+  
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.text-box-4{
+   margin: 12px;
+}
 
 footer {
     margin-top: 7px;
