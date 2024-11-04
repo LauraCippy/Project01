@@ -4,16 +4,22 @@
 
 a{
     text-decoration: none;
+    /* // <uniquifier>: Use a unique and descriptive class name
+       // <weight>: Use a value from 300 to 800
+
+    .moderustic-<uniquifier>  */
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    
+
 }
 
 
 body{
 
     background-color: rgb(255, 255, 255);
-
-
-
-    /* background-image: url(../img/prato.jpg);
+/* background-image: url(../img/prato.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; */
@@ -27,27 +33,29 @@ body{
 
     /* background-attachment: fixed; */
     background-color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 75px 15px rgb(2, 29, 65);
+    box-shadow: 10px 10px 75px 15px #1EAAF1;
 
 }
 
 .logo img{
-    height: 4rem;
+    height: 6rem;
     width: auto;
     border-radius: 40%;
 }
 
 .mainHeader{
-    display: flex; /*applichiamo display:flex al genitore di LOGO e MENU */
+    /*applichiamo display:flex al genitore di LOGO e MENU */
+    display: flex; 
 
-    justify-content: space-around;
     /* affianca sull'asse principale e dispone ai lati opposti*/
+    justify-content: space-evenly;
 
-    align-items: center;
     /* allineo al centro sull'asse verticale */
-    background-color: rgb(255, 255, 255);
+    align-items: center;
 
-    /* posizione del head allinizio della pag */
+    background-color: #1EAAF1;
+
+    /* posizione del head sulla pag */
     position: sticky;
     top:-1px;
     
@@ -60,18 +68,18 @@ body{
 
     display: flex;
 
-    gap: 1.5rem;
     /*aggiunge uno spazio vuoto tra gli elementi figli */
+    gap: 1.5rem;
 
 }
 
 .wrapper{
     width:75%;
-        margin:0 auto;
+    margin:0 auto;
 
-        background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     
-        padding: 1rem;
+    padding: 1rem;
 }
 
 
@@ -80,8 +88,10 @@ footer {
     margin-top: 7px;
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center;
-    background-color: rgb(2, 29, 65);
 
-   
+    text-align: center;
+    color: white;
+
+    background-color: #1EAAF1;
+
 }
