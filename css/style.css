@@ -18,7 +18,7 @@ a{
 
 body{
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(44, 109, 153);
 /* background-image: url(../img/prato.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,6 +30,7 @@ body{
 
     max-width: 1200px;
     margin:0 auto;
+    border-radius: 6px;
 
     /* background-attachment: fixed; */
     background-color: rgb(255, 255, 255);
