@@ -77,10 +77,11 @@ body{
 
 
 footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
     background-color: rgb(2, 29, 65);
 
-    margin-top: 2rem;
+   
 }
