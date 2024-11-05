@@ -1,3 +1,6 @@
+/* -------------------------------------------------------------------------- */
+/*                                GRNERALE                                    */
+/* -------------------------------------------------------------------------- */
 *{
     box-sizing: border-box;
 }
@@ -7,16 +10,16 @@ a{
 }
 
 body{
+
     font-family: "Moderustic", sans-serif;
     font-optical-sizing: auto;
     
-
     background-color: rgb(44, 109, 153)   
 }
 
 img {
     /*rendo fluide TUTTE le immagini */
-     /*l'immagine diventa fluida e non esce dal contenitore anche se la sua 
+    /*l'immagine diventa fluida e non esce dal contenitore anche se la sua 
     dimensione intrinseca è più grande */
     max-width: 100%;
     height:auto; 
@@ -28,18 +31,29 @@ img {
     margin:0 auto;
     border-radius: 6px;
 
-    background-color: rgb(255, 255, 255);
     box-shadow: 10px 10px 75px 15px #1EAAF1;
 
 }
 
+.wrapper{
+    width:100%;
+    margin:0 auto;
+
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                NAVBAR                                      */
+/* -------------------------------------------------------------------------- */
 .logo img{
     height: 6rem;
     width: auto;
-    border-radius: 40%;
+    
 }
 
-.mainHeader{
+
+.navbar{
     /*applichiamo display:flex al genitore di LOGO e MENU */
     display: flex; 
 
@@ -57,36 +71,42 @@ img {
     
 }
 
-.barra_di_navigazione ul{
+.navLinks ul{
 
     list-style-type:none;
     margin: 0;
 
     display: flex;
+    align-items: center;
 
     /*aggiunge uno spazio vuoto tra gli elementi figli */
     gap: 1.5rem;
 
 }
 
-.wrapper{
-    width:100%;
-    margin:0 auto;
-
-    background-color: rgb(255, 255, 255);
-    
-    padding: 1rem;
+.navLinks button{
+    background-color: #1EAAF1;
+    border: none;
 }
 
-.box-1{
+.navLinks svg{
+    color: rgb(44, 109, 153);
+    height:2rem;
+    width: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                FUTURO swiper                               */
+/* -------------------------------------------------------------------------- */
+/* .box-1{
     display: flex;
     align-items: center;
+    
   
 }
 
 .img-box-1 img{
-    /* height: 10rem;
-    width: auto; */
+    
     border-radius: 50px;
 
 }
@@ -97,24 +117,24 @@ img {
     align-items: center;
 
     padding: 2rem;
-}
+} */
 
-.parte-2 h1{
+/* -------------------------------------------------------------------------- */
+/*                                FLEX-BOX                                    */
+/* -------------------------------------------------------------------------- */
+.flex-box h1{
     text-align: center;
 }
 
 .box{
     display: flex;
     align-items:center;
+    flex-direction: row-reverse;
     
-    column-gap: 1rem; /*spazio tra le colonne */
-
+    column-gap: 1rem; 
     padding-bottom: 3rem;
 
-    flex-direction: row-reverse;
 }
-
-
 
 .img-box{
     
@@ -127,7 +147,6 @@ img {
     width: 60%;
     
 }
-
 
 .box:nth-of-type(even) .img-box {
     /*seleziono tutti gli elementi .servImage dentro gli elementi .servBox di numero PARI.*/
@@ -143,7 +162,9 @@ img {
     text-align: right;
 }
 
-
+/* -------------------------------------------------------------------------- */
+/*                                FOOTER                                      */
+/* -------------------------------------------------------------------------- */
 footer {
     margin-top: 7px;
     padding-top: 5px;
@@ -155,3 +176,55 @@ footer {
     background-color: #1EAAF1;
 
 }
+
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width:992px) {
+    /*tutte le regole per questo range di dimensioni*/
+
+    /* .navbar{
+        
+        display: flex; 
+    
+        
+        justify-content: space-evenly;
+    
+        
+        align-items: center;
+    
+        background-color: #1EAAF1;
+    
+        position: sticky;
+        top:-1px;
+        
+    } */
+
+    .box{
+      
+        flex-direction: column;
+
+    }
+
+    .box:nth-of-type(even) .img-box {
+        order:0;
+    }
+    
+    .box:nth-of-type(even) .text-box {
+    text-align: left;
+}
+}
+
+/* ESEMPIO DI MEDIA QUERY CHE DEFINISCE LE REGOLE IN BASE ALL'ORIENTAMENTO DELLO SCHERMO: */
+
+
+/*landscape: orizzontale | portrait: verticale */
+/* @media screen and (orientation: portrait) {
+
+    body {
+        background: rgb(223, 106, 255);
+    }
+
+} */
